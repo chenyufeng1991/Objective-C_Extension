@@ -11,7 +11,6 @@
 @interface Person : NSObject
 
 - (instancetype)initWithName:(NSString*)aName;
-
 - (void)print;
 
 @property(nonatomic,strong) NSString *name;

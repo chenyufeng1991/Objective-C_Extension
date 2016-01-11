@@ -12,20 +12,16 @@
 @interface Person ()
 //对于普通变量，不能使用strong,retain,copy,只能使用assign；
 @property(nonatomic,assign) int age;
-
 //这是可以理解为private 类型的方法；只可以在该类@implementation内部调用；对外部不可见；
 - (void)printName;
 - (void)printAge;
 
 @end
 
-
-
 //类的实现文件；
 @implementation Person
 
-- (instancetype)initWithName:(NSString*)aName
-{
+- (instancetype)initWithName:(NSString*)aName{
   //使用父类的方法来初始化对象；
   self = [super init];
   if (self) {
@@ -53,5 +49,3 @@
 }
 
 @end
-
-
